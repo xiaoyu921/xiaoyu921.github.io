@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>Hexo系列教程：（一）搭建 GitHub Pages + Hexo博客 | xiaoyu&#39;blog</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="xiaoyu'blog">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="xiaoyu&#39;blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="https://github.com/SuperKieran/front-end-plugins" target="_BLANK" class="animsition-link">前端常用插件汇总</a></li>
+                    
+                        <li><a href="http://www.udparty.com/topic/1849.html" target="_BLANK" class="animsition-link">Urban Data Challenge 2016</a></li>
+                    
+                        <li><a href="http://www.w3school.com.cn/js/" target="_BLANK" class="animsition-link">JavaScript</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://srforever.github.io" class="animsition-link">曹松</a></li>
+                    
+                    <li><a href="http://hyxixi.github.io" class="animsition-link">何艳</a></li>
+                    
+                    <li><a href="http://hzg751.github.io" class="animsition-link">华竹根</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">xiaoyu'blog</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/xiaoyu921" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li><a href="http://weibo.com/5698534543" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <!-- ============================ Hero Image =========================== -->
+
+        <section id="hero" class="scrollme">
+            <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                        <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                            <div>
+                            	
+                                <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
+                                <p></p>
+				    			
+                                <h2></h2>
+                                <p>每一个不曾起舞的日子都是对生命的辜负。</p>
+				    			
+                                <h2></h2>
+                                <p><span>承认吧，其实你们都喜欢文艺青年<span></p>
+				    			
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // .col-md-12 -->
+                </div>
+                <div class="herofade beige-dk"></div>
+            </div>
+        </section>
+
+        <!-- Height spacing helper -->
+        <div class="heightblock"></div>
+        <!-- // End height spacing helper -->
+
+        <!-- ============================ END Hero Image =========================== -->
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-07-22T13:02:54.000Z" itemprop="datePublished">
+          2016-07-22
+      </time>
+    
+</span>
+                <h1>Hexo系列教程：（一）搭建 GitHub Pages + Hexo博客</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><h3 id="1-1写在前面"><a href="#1-1写在前面" class="headerlink" title="1.1写在前面"></a>1.1写在前面</h3><p>这是一篇使用GitHub Pages和Hexo搭建免费独立博客的总结。</p>
+<p>作为一个前端大白来说，搭建过程活生生就是一部可歌可泣的血泪史，但是好在时间没有白费，通过给三台电脑搭建，现在也算是熟练的不要不要的。其实很想买一个自己的域名，搭建博客的初衷就是创造自己的品牌，况且chenxiaoyu.xyz多适合我（妈妈从小就想我像一个小宇宙一样爆发）奈何我还没有工资（( ▼-▼ )）</p>
+<p>下面说说为啥写这篇博客</p>
+<p>1.总结一下自己的安装经验</p>
+<p>2.适应一下Markdown的写作语法</p>
+<p>3.也算是深度理解一下GitHub吧</p>
+<p>其实很感谢自己的导师，不是导师的提议，自己没个明确的方向，也就没有一个具体的学习目标，也不会费劲心思搭个博客。六个月的实习过去了一周，倘若每天的学习状态都像这些天一样打了鸡血似的，我的目标也就达到了。</p>
+<h3 id="1-2熟悉Git-GitHub"><a href="#1-2熟悉Git-GitHub" class="headerlink" title="1.2熟悉Git\GitHub"></a>1.2熟悉Git\GitHub</h3><p>下面介绍一些可以熟悉Git的一些网站：</p>
+<ul>
+<li>Github简明教程：<a href="http://www.runoob.com/w3cnote/git-guide.html" target="_blank" rel="external">Github</a></li>
+<li>GitBook: <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">GitBook</a></li>
+<li>待我代码编成，娶你为妻可好： <a href="https://github.com/phodal/github-roam" target="_blank" rel="external">GitHub 漫游指南</a></li>
+</ul>
+<p>至于Github到底能干什么，其实我自己到现在还不是很理解，但是目前来说，我可以用它来做一个博客了，而且导师与学长们一直用其来管理科研项目和数据。网上看到这张图，不得不佩服作者的思维，这张图可以帮很多人稍稍理解一下。</p>
+<p><img src="https://pic4.zhimg.com/7c9d3403bf922b1663f56975869c829b_b.png" alt="tupian"></p>
+<p>他的一个创始人说 <strong> Do whatever you want </strong> .可以绑定你的域名(但暂时貌似只能绑定一个)。</p>
+<p>简单快捷，使用Github Pages可以为你提供一个免费的服务器，免去了自己搭建服务器和写数据库的麻烦。在知乎上看到说日本政府把宪法放上去了，德国政府也做过类似的事：German Federal Law Now on GitHub。还有一位奇葩用它来找男票，没错利用众包的形式一起罗列男友条件的 list 然后试图自己开发出一个<a href="https://github.com/YixuanFranco/YourBoyfriend" target="_blank" rel="external">男票</a>.当然，后期我也会考虑使用它来做一个个人简历，在此对他的其他功能就不多赘述了。</p>
+<h3 id="1-3-git和github的区别"><a href="#1-3-git和github的区别" class="headerlink" title="1.3 git和github的区别"></a>1.3 git和github的区别</h3><p>git是一个版本控制的工具，而github有点类似于远程仓库，用于存放用git管理的各种项目。</p>
+<p>具体的区别我们到后面再详细讲解</p>
+<h5 id="详细参考"><a href="#详细参考" class="headerlink" title="详细参考"></a>详细参考</h5><ul>
+<li><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">git - 简明教程</a></li>
+</ul>
+<h2 id="二、安装准备"><a href="#二、安装准备" class="headerlink" title="二、安装准备"></a>二、安装准备</h2><h3 id="2-1GitHub-Pages"><a href="#2-1GitHub-Pages" class="headerlink" title="2.1GitHub Pages"></a>2.1GitHub Pages</h3><h4 id="创建自己的仓库"><a href="#创建自己的仓库" class="headerlink" title="创建自己的仓库"></a>创建自己的仓库</h4><p>首先要去官网注册一个自己的GitHub账号，注册完以后创建一个自己的Github Pages项目，之前看的教程上说项目名字必须为usemame.githhub.io，我照做了后面也成功了，然而在给同学搭建时他的项目名不是用户名，后期确实真的出现了错误。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1712159-3dfd013c098b6665.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建项目"></p>
+<p>开始不是很懂为什么，后来百度查了资料，GitHub Pages有两种类型：User/Organization Pages 和 Project Pages，而我所使用的是User Pages。</p>
+<p>简单来说，User Pages 与 Project Pages的区别是：</p>
+<p>1.User Pages 是用来展示用户的，而 Project Pages 是用来展示项目的。</p>
+<p>2.用于存放 User Pages 的仓库必须使用username.github.io的命名规则，而 Project Pages 则没有特殊的要求。</p>
+<p>3.User Pages 将使用仓库的 master 分支，而 Project Pages 将使用 gh-pages 分支。</p>
+<p>4.User Pages 通过 http(s)://username.github.io 进行访问，而 Projects Pages通过 http(s)://username.github.io/projectname 进行访问。</p>
+<h5 id="详细参考-1"><a href="#详细参考-1" class="headerlink" title="详细参考"></a>详细参考</h5><ul>
+<li><a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank" rel="external">GitHub Pages Basics / User, Organization, and Project Pages</a></li>
+</ul>
+<h3 id="2-2-Git"><a href="#2-2-Git" class="headerlink" title="2.2 Git"></a>2.2 Git</h3><h4 id="2-2-1-安装Git"><a href="#2-2-1-安装Git" class="headerlink" title="2.2.1 安装Git"></a>2.2.1 安装Git</h4><ul>
+<li><a href="http://pan.baidu.com/s/1o8IUcK6" target="_blank" rel="external">Git Windows 百度云</a>（这里提供一个我自己的Git百度云，下载也算是方便快捷）</li>
+<li><a href="https://git-scm.com/download/win" target="_blank" rel="external">Git 官方版本的安装</a></li>
+<li><a href="https://desktop.github.com/" target="_blank" rel="external">GitHub for Windows</a></li>
+</ul>
+<h4 id="2-2-2-配置Git"><a href="#2-2-2-配置Git" class="headerlink" title="2.2.2 配置Git"></a>2.2.2 配置Git</h4><p>当安装完Git应该做的第一件事情就是设置用户名称和邮件地址。这样做很重要，因为每一个Git的提交都会使用这些信息，并且它会写入你的每一次提交中，不可更改。当然我之前也看过很多教程，很多第一布什配置SSH，但是这里我就按照信息来做吧。</p>
+<pre><code>$ git config --global user.name &quot;username&quot;
+$ git config --global user.email &quot;username@example.com&quot;
+</code></pre><p> <strong> 隐私做法 </strong> </p>
+<p>对于user.email，因为在GitHub的commits信息上是可见的，所以如果你不想让人知道你的email，可以Keeping your email address private:</p>
+<p>1.在GitHub右上方点击你的头像，选择”Settings”；</p>
+<p>2.在右边的”Personal settings”侧边栏选择”Emails”；</p>
+<p>3.选择”Keep my email address private”。</p>
+<p>这样，你就可以使用如下格式的email进行配置：</p>
+<pre><code>$ git config --global user.email &quot;username@users.noreply.github.com&quot;
+</code></pre><h5 id="详细参考-2"><a href="#详细参考-2" class="headerlink" title="详细参考"></a>详细参考</h5><ul>
+<li><a href="https://help.github.com/articles/setting-your-email-in-git/" target="_blank" rel="external">Setting your email in Git</a></li>
+<li><a href="https://help.github.com/articles/keeping-your-email-address-private/" target="_blank" rel="external">Keeping your email address private</a></li>
+</ul>
+<h4 id="2-2-3-配置SSH"><a href="#2-2-3-配置SSH" class="headerlink" title="2.2.3 配置SSH"></a>2.2.3 配置SSH</h4><h4 id="2-2-3-1-检查电脑里是否已有SSH-keys"><a href="#2-2-3-1-检查电脑里是否已有SSH-keys" class="headerlink" title="2.2.3.1 检查电脑里是否已有SSH keys"></a>2.2.3.1 检查电脑里是否已有SSH keys</h4><pre><code>$ ls -al ~/.ssh
+</code></pre><p>检查本机home目录下是否有.ssh目录，如果并不存在就进行下一步，如果存在，可以直接到第三步。</p>
+<h4 id="2-2-3-2-创建SSH密钥（keys）"><a href="#2-2-3-2-创建SSH密钥（keys）" class="headerlink" title="2.2.3.2 创建SSH密钥（keys）"></a>2.2.3.2 创建SSH密钥（keys）</h4><pre><code>$ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
+</code></pre><p>之后直接回车，一路回车，因为他会叫你输入密码，你直接回车，没有密码就是最安全的密码，哈哈。将密钥按默认文件进行存储。当有以下结果时，前往自己的文件夹里比如/c/Users/you/.ssh/github_rsa查看密钥</p>
+<pre><code>Your identification has been saved in /c/Users/you/.ssh/id_rsa.
+Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
+The key fingerprint is:
+01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
+</code></pre><h4 id="2-2-3-3在GitHub添加SSH-key。"><a href="#2-2-3-3在GitHub添加SSH-key。" class="headerlink" title="2.2.3.3在GitHub添加SSH key。"></a>2.2.3.3在GitHub添加SSH key。</h4><p>一般来说会有一个公有密钥和一个私有密钥，用记事本打开你的公有密钥，复制后登陆GitHub，在GitHub右上方点击头像，选择”Settings”，在右边的”Personal settings”侧边栏选择”SSH Keys”。接着粘贴key，点击”Add key”按钮。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://upload-images.jianshu.io/upload_images/1712159-0419298696b76bc3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="粘贴密钥"></h2><h4 id="2-2-3-4-测试链接"><a href="#2-2-3-4-测试链接" class="headerlink" title="2.2.3.4 测试链接"></a>2.2.3.4 测试链接</h4><p>回到本机，输入以下指令查看是否成功</p>
+<pre><code>$ ssh -T git@github.com
+</code></pre><p>如果看到</p>
+<pre><code>The authenticity of host &apos;github.com (207.97.227.239)&apos; can&apos;t be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)?
+</code></pre><p>输入yes，直到看到他欢迎你。哇塞(o゜▽゜)o☆，配好了哦。</p>
+<pre><code>Hi username! You&apos;ve successfully authenticated, but GitHub does not 
+provide shell access.
+</code></pre><h5 id="详细参考-3"><a href="#详细参考-3" class="headerlink" title="详细参考"></a>详细参考</h5><ul>
+<li><a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_blank" rel="external">Error: Permission denied (publickey)</a></li>
+<li><a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a></li>
+</ul>
+<h3 id="2-3-Node-js"><a href="#2-3-Node-js" class="headerlink" title="2.3 Node.js"></a>2.3 Node.js</h3><p>在 Windows 环境下安装 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a> 非常简单，仅须到官网下载安装文件并执行即可完成安装。而且安装时一直下一步，不需要配置什么。</p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="http://upload-images.jianshu.io/upload_images/1712159-b460a3d917ed2ad7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="node.js"></h2><h3 id="2-4-Hexo"><a href="#2-4-Hexo" class="headerlink" title="2.4 Hexo"></a>2.4 Hexo</h3><h4 id="2-4-1-安装Hexo"><a href="#2-4-1-安装Hexo" class="headerlink" title="2.4.1 安装Hexo"></a>2.4.1 安装Hexo</h4><p>确认好上述全部安装完成了，现在可以直接使用npm完成Hexo的安装啦。<br>桌面右键鼠标，点击Git Bash Here，输入npm命令即可安装。</p>
+<pre><code>npm install hexo-cli -g
+npm install hexo --save
+#如果命令无法运行，可以尝试更换taobao的npm源
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre><h4 id="2-4-2-初始化"><a href="#2-4-2-初始化" class="headerlink" title="2.4.2 初始化"></a>2.4.2 初始化</h4><p>找到一个自己喜欢的文件夹（例如D：\Hexo），点击鼠标右键选择Git bash，输入以下指令，该命令会在目标文件夹内建立网站所需要的所有文件。</p>
+<pre><code>$ hexo init
+</code></pre><p>接下来是安装依赖包。</p>
+<pre><code>$ npm install
+</code></pre><p><img src="http://upload-images.jianshu.io/upload_images/1712159-63a6743a528a7c2d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文件夹目录"></p>
+<ul>
+<li>_includes：默认的在模板中可以引用的文件的位置，后面会提到</li>
+<li>_layouts：默认的公共页面的位置，后面会提到</li>
+<li>_posts：博客文章默认的存放位置</li>
+<li>.gitignore：git将忽略这个文件中列出的匹配的文件或文件夹，不将这些纳入源码管理</li>
+<li>_config.yml：关于jekyll模板引擎的配置文件</li>
+<li>index.html：默认的主页</li>
+</ul>
+<p>如果不想出错，就把这些全部安装完</p>
+<pre><code>npm install hexo-generator-index --save
+npm install hexo-generator-archive --save
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm install hexo-server --save
+npm install hexo-deployer-git --save
+npm install hexo-deployer-heroku --save
+npm install hexo-deployer-rsync --save
+npm install hexo-deployer-openshift --save
+npm install hexo-renderer-marked@0.2 --save
+npm install hexo-renderer-stylus@0.2 --save
+npm install hexo-generator-feed@1 --save
+npm install hexo-generator-sitemap@1 --save
+</code></pre><p>这样我们就已经搭建好了本地的博客，可以先执行以下命令（在首次创建的文件夹），然后再浏览器输入localhost:4000查看</p>
+<pre><code>$ hexo generate
+$ hexo server
+</code></pre><p>这两句语句以后会很常用到 hexo g 是更新，hexo s 用于发布本地。</p>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="http://upload-images.jianshu.io/upload_images/1712159-9426f901de7b2a47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Hexo"></h2><h2 id="2-5-Hexo部署到GitHub-Pages"><a href="#2-5-Hexo部署到GitHub-Pages" class="headerlink" title="2.5 Hexo部署到GitHub Pages"></a>2.5 Hexo部署到GitHub Pages</h2><p>那么现在本地的博客已经搭建起来了，但是我们只可以通过本地连接查看我们的博客。那么我们现在需要做的就是把本地的博客发布到服务器上，让别人也可以连接我们的博客，而Github Pages就帮我完成了这件事情。</p>
+<p>登录Github打开自己的项目 username.github.io，打开之后，点击HTTPS，选择HTTPS类型地址,d点击旁边的复制按钮</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1712159-f97379e0b3497f5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>然后到本地用记事本打开_config.yml</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1712159-41a0ba385286d40e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>在配置文件最底部，输入以下</p>
+<pre><code>deploy:
+  type: github
+  repository: https://github.com/username/username.github.io.git
+  branch: master
+</code></pre><p>为了能够使Hexo部署到GitHub上，需要安装一个插件，如果你之前没装的话</p>
+<pre><code>$ npm install hexo-deployer-git --save
+</code></pre><p>然后，执行下列指令即可完成部署：</p>
+<pre><code>$ hexo generate
+$ hexo deploy
+</code></pre><p>之后，可以通过在浏览器键入：username.github.io进行浏览，开心吧~</p>
+<p><strong> 记住</strong> ：每次修改本地文件后，需要hexo generate才能保存。每次使用命令时，都要在H:\hexo目录下。</p>
+<h3 id="bugs"><a href="#bugs" class="headerlink" title="bugs"></a>bugs</h3><p>1.有网友反应右键菜单中没有git bash选项，可以进入开始菜单找到git bash，然后通过cd进入相应目录执行命令。</p>
+<p>2.在github部署完成之后，马上访问可能出现404错误，这是正常的，（最多）等待十分钟左右就可以访问了。如果还不行，那很可能是 github 发送给你的验证邮件你没有打开看，据多方反映，验证后就没问题了。</p>
+<p>3.如果在hexo d之后出现fatal: ‘username.github.io’ does not appear to be a git repository，一是检查 repo 的名字是否合乎规范、是否含有大写字母、config.yml 中的 deploy 配置是否正确，二是把 git bash 关掉，重新打开再执行命令。</p>
+<p>4.有的同学可能不是 IT 界的，或者对shell 命令不太了解。在要求输入密码时，你输入之后密码是不显示的，这是为了安全，并非是你没输上。</p>
+<p>5.出现乱码的，不要使用 windows 中的「记事本」打开并编辑文件，推荐使用 sublime text，很简单。如果已经在「记事本」中编辑过，需要使用 sublime text 转码为「utf8」。</p>
+<p>6.安装 hexo 时卡在那儿不动，很可能是网络不给力，能全局 break wall 就好了。</p>
+<p>7.遇到什么其他的问题，不妨删除.deploy 和db.json 然后运行hexo clean，然后再重新生成hexo g<br>hexo s试一试。</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2016/07/22/02 markdown简明语法/">
+        markdown简明语法 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/07/22/GitHub-Pages-Hexo搭建博客/" data-title="Hexo系列教程：（一）搭建 GitHub Pages + Hexo博客" data-url="http://yoursite.com/2016/07/22/GitHub-Pages-Hexo搭建博客/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"xiaoyu921"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By John Doe. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/xiaoyu921" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://weibo.com/5698534543" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
