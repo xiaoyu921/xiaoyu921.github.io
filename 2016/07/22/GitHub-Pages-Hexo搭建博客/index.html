@@ -249,8 +249,7 @@
 <li>GitBook: <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">GitBook</a></li>
 <li>待我代码编成，娶你为妻可好： <a href="https://github.com/phodal/github-roam" target="_blank" rel="external">GitHub 漫游指南</a></li>
 </ul>
-<p>至于Github到底能干什么，其实我自己到现在还不是很理解，但是目前来说，我可以用它来做一个博客了，而且导师与学长们一直用其来管理科研项目和数据。网上看到这张图，不得不佩服作者的思维，这张图可以帮很多人稍稍理解一下。</p>
-<p><img src="https://pic4.zhimg.com/7c9d3403bf922b1663f56975869c829b_b.png" alt="tupian"></p>
+<p>至于Github到底能干什么，其实我自己到现在还不是很理解，但是目前来说，我可以用它来做一个博客了，而且导师与学长们一直用其来管理科研项目和数据。</p>
 <p>他的一个创始人说 <strong> Do whatever you want </strong> .可以绑定你的域名(但暂时貌似只能绑定一个)。</p>
 <p>简单快捷，使用Github Pages可以为你提供一个免费的服务器，免去了自己搭建服务器和写数据库的麻烦。在知乎上看到说日本政府把宪法放上去了，德国政府也做过类似的事：German Federal Law Now on GitHub。还有一位奇葩用它来找男票，没错利用众包的形式一起罗列男友条件的 list 然后试图自己开发出一个<a href="https://github.com/YixuanFranco/YourBoyfriend" target="_blank" rel="external">男票</a>.当然，后期我也会考虑使用它来做一个个人简历，在此对他的其他功能就不多赘述了。</p>
 <h3 id="1-3-git和github的区别"><a href="#1-3-git和github的区别" class="headerlink" title="1.3 git和github的区别"></a>1.3 git和github的区别</h3><p>git是一个版本控制的工具，而github有点类似于远程仓库，用于存放用git管理的各种项目。</p>
@@ -258,7 +257,8 @@
 <h5 id="详细参考"><a href="#详细参考" class="headerlink" title="详细参考"></a>详细参考</h5><ul>
 <li><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">git - 简明教程</a></li>
 </ul>
-<h2 id="二、安装准备"><a href="#二、安装准备" class="headerlink" title="二、安装准备"></a>二、安装准备</h2><h3 id="2-1GitHub-Pages"><a href="#2-1GitHub-Pages" class="headerlink" title="2.1GitHub Pages"></a>2.1GitHub Pages</h3><h4 id="创建自己的仓库"><a href="#创建自己的仓库" class="headerlink" title="创建自己的仓库"></a>创建自己的仓库</h4><p>首先要去官网注册一个自己的GitHub账号，注册完以后创建一个自己的Github Pages项目，之前看的教程上说项目名字必须为usemame.githhub.io，我照做了后面也成功了，然而在给同学搭建时他的项目名不是用户名，后期确实真的出现了错误。</p>
+<hr>
+<h2 id="二、安装准备"><a href="#二、安装准备" class="headerlink" title="二、安装准备"></a>二、安装准备</h2><h3 id="2-1GitHub-Pages"><a href="#2-1GitHub-Pages" class="headerlink" title="2.1GitHub Pages"></a>2.1GitHub Pages</h3><h5 id="创建自己的仓库"><a href="#创建自己的仓库" class="headerlink" title="创建自己的仓库"></a>创建自己的仓库</h5><p>首先要去官网注册一个自己的GitHub账号，注册完以后创建一个自己的Github Pages项目，之前看的教程上说项目名字必须为usemame.githhub.io，我照做了后面也成功了，然而在给同学搭建时他的项目名不是用户名，后期确实真的出现了错误。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1712159-3dfd013c098b6665.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建项目"></p>
 <p>开始不是很懂为什么，后来百度查了资料，GitHub Pages有两种类型：User/Organization Pages 和 Project Pages，而我所使用的是User Pages。</p>
 <p>简单来说，User Pages 与 Project Pages的区别是：</p>
@@ -347,7 +347,8 @@ npm install hexo-generator-sitemap@1 --save
 <pre><code>$ hexo generate
 $ hexo server
 </code></pre><p>这两句语句以后会很常用到 hexo g 是更新，hexo s 用于发布本地。</p>
-<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="http://upload-images.jianshu.io/upload_images/1712159-9426f901de7b2a47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Hexo"></h2><h2 id="2-5-Hexo部署到GitHub-Pages"><a href="#2-5-Hexo部署到GitHub-Pages" class="headerlink" title="2.5 Hexo部署到GitHub Pages"></a>2.5 Hexo部署到GitHub Pages</h2><p>那么现在本地的博客已经搭建起来了，但是我们只可以通过本地连接查看我们的博客。那么我们现在需要做的就是把本地的博客发布到服务器上，让别人也可以连接我们的博客，而Github Pages就帮我完成了这件事情。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1712159-9426f901de7b2a47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Hexo"></p>
+<h3 id="2-5-Hexo部署到GitHub-Pages"><a href="#2-5-Hexo部署到GitHub-Pages" class="headerlink" title="2.5 Hexo部署到GitHub Pages"></a>2.5 Hexo部署到GitHub Pages</h3><p>那么现在本地的博客已经搭建起来了，但是我们只可以通过本地连接查看我们的博客。那么我们现在需要做的就是把本地的博客发布到服务器上，让别人也可以连接我们的博客，而Github Pages就帮我完成了这件事情。</p>
 <p>登录Github打开自己的项目 username.github.io，打开之后，点击HTTPS，选择HTTPS类型地址,d点击旁边的复制按钮</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1712159-f97379e0b3497f5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>然后到本地用记事本打开_config.yml</p>
@@ -364,13 +365,13 @@ $ hexo server
 $ hexo deploy
 </code></pre><p>之后，可以通过在浏览器键入：username.github.io进行浏览，开心吧~</p>
 <p><strong> 记住</strong> ：每次修改本地文件后，需要hexo generate才能保存。每次使用命令时，都要在H:\hexo目录下。</p>
-<h3 id="bugs"><a href="#bugs" class="headerlink" title="bugs"></a>bugs</h3><p>1.有网友反应右键菜单中没有git bash选项，可以进入开始菜单找到git bash，然后通过cd进入相应目录执行命令。</p>
+<h3 id="某些bugs"><a href="#某些bugs" class="headerlink" title="某些bugs"></a>某些bugs</h3><p>1.有同学右键菜单中没有git bash选项，可以进入开始菜单找到git bash，然后通过cd进入相应目录执行命令。</p>
 <p>2.在github部署完成之后，马上访问可能出现404错误，这是正常的，（最多）等待十分钟左右就可以访问了。如果还不行，那很可能是 github 发送给你的验证邮件你没有打开看，据多方反映，验证后就没问题了。</p>
 <p>3.如果在hexo d之后出现fatal: ‘username.github.io’ does not appear to be a git repository，一是检查 repo 的名字是否合乎规范、是否含有大写字母、config.yml 中的 deploy 配置是否正确，二是把 git bash 关掉，重新打开再执行命令。</p>
 <p>4.有的同学可能不是 IT 界的，或者对shell 命令不太了解。在要求输入密码时，你输入之后密码是不显示的，这是为了安全，并非是你没输上。</p>
 <p>5.出现乱码的，不要使用 windows 中的「记事本」打开并编辑文件，推荐使用 sublime text，很简单。如果已经在「记事本」中编辑过，需要使用 sublime text 转码为「utf8」。</p>
 <p>6.安装 hexo 时卡在那儿不动，很可能是网络不给力，能全局 break wall 就好了。</p>
-<p>7.遇到什么其他的问题，不妨删除.deploy 和db.json 然后运行hexo clean，然后再重新生成hexo g<br>hexo s试一试。</p>
+<p>7.遇到什么其他的问题，不妨删除.deploy 和db.json 然后运行hexo clean，然后再重新生成hexo g hexo s试一试。</p>
 <hr>
 <p>特别鸣谢：</p>
 <ul>
