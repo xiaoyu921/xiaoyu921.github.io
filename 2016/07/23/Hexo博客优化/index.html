@@ -83,6 +83,8 @@
 
   
   <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+  
+
 </head>
 
 <!--
@@ -405,21 +407,20 @@ $ hexo d同步到github
 <ol>
 <li><p>使用双空格缩进的方式（这种方式在Hexo中代码不支持高亮）</p>
 </li>
-<li><p>使用<figure class="highlight plain"><figcaption><span>block```的方式（这种方式在部分情况下可以高亮，但是在我的机器上却不能实现高亮）</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">3. 使用代码块的语法，具体可以看Codeblock - Octopress</div><div class="line">	&#123;% codeblock [lang:language] [title] [url] [link text] %&#125;</div><div class="line">	code snippet</div><div class="line">	&#123;% endcodeblock %&#125;</div><div class="line"></div><div class="line">反正最终我使用这种方式在我的hexo博客代码的高亮</div><div class="line"></div><div class="line">4. hexo使用highlight.js. 在markdown中用</div><div class="line">	```cpp</div><div class="line">	this is cpp code</div></pre></td></tr></table></figure></p>
+<li><p>使用<code>code block</code>的方式（这种方式在部分情况下可以高亮，但是在我的机器上却不能实现高亮）</p>
+</li>
+<li><p>使用代码块的语法，具体可以看Codeblock - Octopress</p>
+ <figure class="highlight plain"><figcaption><span>[] [title] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">code snippet</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>告诉hexo生成带高亮的codeblock</p>
-<p>然而highlight.js支持的格式较少而且好像不太好配置，unix user可以用那个大神写的一个hexo插件: </p>
-<p><a href="https://github.com/ppwwyyxx/hexo-tag-vimhighlight" target="_blank" rel="external">GitHub - ppwwyyxx/hexo-tag-vimhighlight: Highlight code using vim in hexo. </a></p>
-<p>这个插件调用vim, 把vim的代码高亮嵌入html. vim里什么颜色最后blog里就是什么颜色.</p>
+<p>反正最终我使用这种方式在我的hexo博客代码的高亮</p>
 <h2 id="三、Hexo博客优化"><a href="#三、Hexo博客优化" class="headerlink" title="三、Hexo博客优化"></a>三、Hexo博客优化</h2><h3 id="3-1-添加评论"><a href="#3-1-添加评论" class="headerlink" title="3.1 添加评论"></a>3.1 添加评论</h3><p>网上说评论添加起来很简单，可是我却费了大半天功夫，虽然是直接拿“多说”来配置的，</p>
 <ol>
 <li><p>进入多说，注册一个帐号，然后点击安装创建一个站点，获得通用代码(建议使用稳定版)。</p>
 </li>
-<li><p>两种情况。</p>
+<li><p>两种情况 第一种情况：如果你是使用的是light主题和基于light改善的主题，</p>
 </li>
 </ol>
-<p>第一种情况：如果您是使用的是light主题和基于light改善的主题，</p>
 <p>或者说你的hexo\themes..\layout_partial文件夹下有comment.ejs，</p>
 <p>则将hexo\themes...\layout_partial\comment.ejs的代码改成如下代码，</p>
 <p>其中short_name记得改成你自己的，在通用代码里可以看得到你的short_name。</p>
@@ -435,10 +436,7 @@ $ hexo d同步到github
     &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;/nav&gt;
 
-
-
 &lt;section id=&quot;comment&quot;&gt;
-
 
 &lt;!-- 多说评论框 start --&gt;
 &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&lt;%= page.path %&gt;&quot; data-title=&quot;&lt;%= page.title %&gt;&quot; data-url=&quot;&lt;%= page.permalink %&gt;&quot;&gt;&lt;/div&gt;
@@ -456,7 +454,6 @@ var duoshuoQuery = {short_name:&quot;chillax&quot;};
 })();
 &lt;/script&gt;
 &lt;!-- 多说公共JS代码 end --&gt;
-
 
 &lt;/section&gt;
 &lt;% } %&gt;
@@ -507,7 +504,7 @@ var duoshuoQuery = {short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;
 <li><p>对\hexo\themes..._config.yml进行如下配置,当然如果你的主题里面包含了，你只要去修改即可</p>
 <p> rss: /atom.xml</p>
 </li>
-<li><p>在\hexo\themes...\layout_partial\header.ejs中，找到<ul></ul>,在<ul></ul>之间添加<li> <a href="/atom.xml">RSS</a> </li>。</p>
+<li><p>在\hexo\themes...\layout_partial\header.ejs中，找到<code>&lt;ul&gt;&lt;/ul&gt;</code>,在<code>&lt;ul&gt;&lt;/ul&gt;</code>之间添加<code>&lt;li&gt; &lt;a href=&quot;/atom.xml&quot;&gt;RSS&lt;/a&gt; &lt;/li&gt;</code>。</p>
 </li>
 <li><p>将E:\hexo_config.yml中的url添加为自己的网址。</p>
 <p> url: <a href="http://opiece.me" target="_blank" rel="external">http://opiece.me</a></p>
