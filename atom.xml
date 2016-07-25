@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://https://xiaoyu921.github.io/"/>
-  <updated>2016-07-24T08:36:51.163Z</updated>
+  <updated>2016-07-25T01:22:47.164Z</updated>
   <id>http://https://xiaoyu921.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo博客美化</title>
+    <title>hexo系列教程：（三）Hexo博客美化</title>
     <link href="http://https://xiaoyu921.github.io/2016/07/23/Hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
     <id>http://https://xiaoyu921.github.io/2016/07/23/Hexo博客美化/</id>
     <published>2016-07-23T11:07:41.000Z</published>
-    <updated>2016-07-24T08:36:51.163Z</updated>
+    <updated>2016-07-25T01:22:47.164Z</updated>
     
     <content type="html"><![CDATA[<p>其实个人觉得这些美化有一丢丢的浪费时间，好在今天周末，我就当作玩玩了，首先来说博客里添加图片。</p>
 <h3 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h3><pre><code>![动图](http://p3.music.126.net/KfwFXrx2yEll4mSi2Oy8wQ==/3434874332063283.jpg)
@@ -39,6 +39,8 @@
     
     </summary>
     
+      <category term="Hexo" scheme="http://https://xiaoyu921.github.io/categories/Hexo/"/>
+    
     
   </entry>
   
@@ -47,7 +49,7 @@
     <link href="http://https://xiaoyu921.github.io/2016/07/23/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
     <id>http://https://xiaoyu921.github.io/2016/07/23/Hexo博客优化/</id>
     <published>2016-07-23T10:58:45.000Z</published>
-    <updated>2016-07-25T00:51:14.398Z</updated>
+    <updated>2016-07-25T02:11:03.580Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、Hexo主题更改及配置"><a href="#一、Hexo主题更改及配置" class="headerlink" title="一、Hexo主题更改及配置"></a>一、Hexo主题更改及配置</h2><h3 id="1-1-Hexo主题更改"><a href="#1-1-Hexo主题更改" class="headerlink" title="1.1 Hexo主题更改"></a>1.1 Hexo主题更改</h3><h4 id="1-1-1选择主题"><a href="#1-1-1选择主题" class="headerlink" title="1.1.1选择主题"></a>1.1.1选择主题</h4><p>进入<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo</a>的官网主题专栏，选择自己喜欢的主题然后进入到它的github地址，我们只要把这个地址复制下来(例如我是选择：hexo-theme-next这个主题)你也可以通过其他途径找到自己喜欢的主题，只要找到其github地址复制下来即可</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1712159-e6d63d1b37c2fac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="主题"></p>
@@ -61,7 +63,13 @@
 <p><strong>整个博客的配置文件\hexo_config.yml</strong></p>
 <p><strong>主题的配置文件\hexo\themes\light_config.yml</strong></p>
 <p>此地址是对于我来说，hexo3.0使用的默认主题是landscape，因此你们的地址应该是\hexo\themes\landscape_config.yml。</p>
-<p>本博客使用的主题是基于TKL改善的主题，目前还在完善中，如果完成的比较好，以后可能发布在github上。</p>
+<p>本博客使用的主题是基于<a href="https://github.com/SuperKieran/TKL" target="_blank" rel="external">TKL</a>改善的主题，目前还在完善中，如果完成的比较好，以后可能发布在github上。因为作者是用ejs写的，所以我们修改主题的时候要考虑的问题要多一些。</p>
+<p><img src="http://7xr185.com1.z0.glb.clouddn.com/tkl1.jpg" alt=""></p>
+<pre><code>|-- layout (布局文件)
+    |-- _widget (控件)
+    |-- casper ( meta 等布局)
+|-- source （资源文件 字体，样式，js等）
+</code></pre><p>主要的布局都在<code>casper</code>文件夹下，如主页布局<code>index.ejs</code>,文章页布局<code>post.ejs</code>,顶部导航<code>header.ejs</code>,关于界面<code>about.ejs</code>。</p>
 <h3 id="1-3-博客配置文件"><a href="#1-3-博客配置文件" class="headerlink" title="1.3 博客配置文件"></a>1.3 博客配置文件</h3><p>接下来介绍整个博客的配置文件。</p>
 <pre><code># Hexo Configuration
 ## Docs: http://zespia.tw/hexo/docs/configure.html
@@ -345,7 +353,7 @@ var duoshuoQuery = {short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;
     <link href="http://https://xiaoyu921.github.io/2016/07/22/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://https://xiaoyu921.github.io/2016/07/22/GitHub-Pages-Hexo搭建博客/</id>
     <published>2016-07-22T13:02:54.000Z</published>
-    <updated>2016-07-23T10:31:33.027Z</updated>
+    <updated>2016-07-25T02:08:25.248Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><h3 id="1-1写在前面"><a href="#1-1写在前面" class="headerlink" title="1.1写在前面"></a>1.1写在前面</h3><p>这是一篇使用GitHub Pages和Hexo搭建免费独立博客的总结。</p>
 <p>作为一个前端大白来说，搭建过程活生生就是一部可歌可泣的血泪史，但是好在时间没有白费，通过给三台电脑搭建，现在也算是熟练的不要不要的。其实很想买一个自己的域名，搭建博客的初衷就是创造自己的品牌，况且chenxiaoyu.xyz多适合我（妈妈从小就想我像一个小宇宙一样爆发）奈何我还没有工资（( ▼-▼ )）</p>
@@ -464,7 +472,15 @@ $ hexo server
 <p><img src="http://upload-images.jianshu.io/upload_images/1712159-f97379e0b3497f5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>然后到本地用记事本打开_config.yml</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1712159-41a0ba385286d40e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>在配置文件最底部，输入以下</p>
+<pre><code>|--node_modules (npm)
+|-- _config.yml  (全局配置文件)
+|-- package.json （hexo框架参数）
+|-- scaffolds （博文目录，hexo根据此文件夹来生成网页）
+|-- source （重要，里面为新建的文章）
+    |-- _drafts
+    |-- _posts（通常hexo new 的文章都在这里）
+|-- themes （主题文件）
+</code></pre><p>在配置文件最底部，输入以下</p>
 <pre><code>deploy:
   type: github
   repository: https://github.com/username/username.github.io.git
@@ -497,6 +513,8 @@ $ hexo deploy
       &lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;h3 id=&quot;1-1写在前面&quot;&gt;&lt;a href=&quot;#1-1写在前面&quot; class=&quot;headerlink&quot; title=&quot;1.1
     
     </summary>
+    
+      <category term="Hexo" scheme="http://https://xiaoyu921.github.io/categories/Hexo/"/>
     
     
   </entry>
@@ -538,7 +556,7 @@ $ hexo deploy
     <link href="http://https://xiaoyu921.github.io/2016/07/21/01%20%E5%90%90%E6%A7%BD/"/>
     <id>http://https://xiaoyu921.github.io/2016/07/21/01 吐槽/</id>
     <published>2016-07-21T13:23:39.000Z</published>
-    <updated>2016-07-22T03:23:20.900Z</updated>
+    <updated>2016-07-25T01:24:09.707Z</updated>
     
     <content type="html"><![CDATA[<p></p><p><br>直视自我内心的人，是值得敬佩的。</p>
 <p></p><p><br>我不是，但我有个大学同学是，因为他能坚持每天写日记。</p>
@@ -566,6 +584,10 @@ $ hexo deploy
     
     </summary>
     
+      <category term="杂文" scheme="http://https://xiaoyu921.github.io/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+      <category term="思想" scheme="http://https://xiaoyu921.github.io/tags/%E6%80%9D%E6%83%B3/"/>
     
   </entry>
   
@@ -574,7 +596,7 @@ $ hexo deploy
     <link href="http://https://xiaoyu921.github.io/2016/07/21/03%20%E6%A2%A6%E6%83%B3%E6%80%BB%E6%98%AF%E8%A6%81%E6%9C%89%E7%9A%84%EF%BC%8C%E4%B8%87%E4%B8%80%E4%BD%A0%E6%9C%89%E9%92%B1%E4%BA%86%E5%91%A2/"/>
     <id>http://https://xiaoyu921.github.io/2016/07/21/03 梦想总是要有的，万一你有钱了呢/</id>
     <published>2016-07-21T12:34:35.000Z</published>
-    <updated>2016-07-22T09:36:57.001Z</updated>
+    <updated>2016-07-25T01:23:19.912Z</updated>
     
     <content type="html"><![CDATA[<p>科幻作品《星际迷航》里的想象，很多都塑造了今天我们生存的世界，比如里面随处可见的电子设备 PADD，相当于今天的平板电脑。</p>
 <p>换句话说，《星际迷航》也给很多科技公司老板带来无数灵感，包括亚马逊的 CEO 贝索斯，姐姐杰姬·贝索斯还爆料说他经常引用电影里的台词，例如那句“宇宙是最终的边界。”（Space, the final frontier.）</p>
@@ -593,6 +615,8 @@ $ hexo deploy
 &lt;p&gt;换句话说，《星际迷航》也给很多科技公司老板带来无数灵感，包括亚马逊的 CEO 贝索斯，姐姐杰姬·贝索斯还爆料说他经常引用电影里的台词，例
     
     </summary>
+    
+      <category term="杂文" scheme="http://https://xiaoyu921.github.io/categories/%E6%9D%82%E6%96%87/"/>
     
     
   </entry>

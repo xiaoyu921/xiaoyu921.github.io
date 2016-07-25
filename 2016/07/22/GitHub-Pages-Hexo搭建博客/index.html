@@ -120,7 +120,9 @@
         		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 				  	
-				    <li><a href="/categories/Hexo/" class="animsition-link">Hexo<small>(1)</small></a></li>
+				    <li><a href="/categories/Hexo/" class="animsition-link">Hexo<small>(3)</small></a></li>
+				    
+				    <li><a href="/categories/杂文/" class="animsition-link">杂文<small>(2)</small></a></li>
 				    
 				</ul>
         	</li>
@@ -199,7 +201,7 @@
 
         <!-- ============================ Header & Logo bar =========================== -->
 
-        <!-- ============================ Hero Image =========================== -->
+      	<!-- ============================ Hero Image =========================== -->
 
         <section id="hero" class="scrollme">
             <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
@@ -364,7 +366,15 @@ $ hexo server
 <p><img src="http://upload-images.jianshu.io/upload_images/1712159-f97379e0b3497f5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>然后到本地用记事本打开_config.yml</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1712159-41a0ba385286d40e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>在配置文件最底部，输入以下</p>
+<pre><code>|--node_modules (npm)
+|-- _config.yml  (全局配置文件)
+|-- package.json （hexo框架参数）
+|-- scaffolds （博文目录，hexo根据此文件夹来生成网页）
+|-- source （重要，里面为新建的文章）
+    |-- _drafts
+    |-- _posts（通常hexo new 的文章都在这里）
+|-- themes （主题文件）
+</code></pre><p>在配置文件最底部，输入以下</p>
 <pre><code>deploy:
   type: github
   repository: https://github.com/username/username.github.io.git
