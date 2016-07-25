@@ -47,7 +47,7 @@
     <link href="http://https://xiaoyu921.github.io/2016/07/23/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
     <id>http://https://xiaoyu921.github.io/2016/07/23/Hexo博客优化/</id>
     <published>2016-07-23T10:58:45.000Z</published>
-    <updated>2016-07-24T07:05:11.410Z</updated>
+    <updated>2016-07-25T00:51:14.398Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、Hexo主题更改及配置"><a href="#一、Hexo主题更改及配置" class="headerlink" title="一、Hexo主题更改及配置"></a>一、Hexo主题更改及配置</h2><h3 id="1-1-Hexo主题更改"><a href="#1-1-Hexo主题更改" class="headerlink" title="1.1 Hexo主题更改"></a>1.1 Hexo主题更改</h3><h4 id="1-1-1选择主题"><a href="#1-1-1选择主题" class="headerlink" title="1.1.1选择主题"></a>1.1.1选择主题</h4><p>进入<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo</a>的官网主题专栏，选择自己喜欢的主题然后进入到它的github地址，我们只要把这个地址复制下来(例如我是选择：hexo-theme-next这个主题)你也可以通过其他途径找到自己喜欢的主题，只要找到其github地址复制下来即可</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1712159-e6d63d1b37c2fac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="主题"></p>
@@ -334,6 +334,8 @@ var duoshuoQuery = {short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;
       &lt;h2 id=&quot;一、Hexo主题更改及配置&quot;&gt;&lt;a href=&quot;#一、Hexo主题更改及配置&quot; class=&quot;headerlink&quot; title=&quot;一、Hexo主题更改及配置&quot;&gt;&lt;/a&gt;一、Hexo主题更改及配置&lt;/h2&gt;&lt;h3 id=&quot;1-1-Hexo主题更改&quot;&gt;&lt;a href
     
     </summary>
+    
+      <category term="Hexo" scheme="http://https://xiaoyu921.github.io/categories/Hexo/"/>
     
     
   </entry>
