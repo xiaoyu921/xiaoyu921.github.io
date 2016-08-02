@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://https://xiaoyu921.github.io/"/>
-  <updated>2016-07-26T07:10:44.931Z</updated>
+  <updated>2016-08-02T01:14:37.533Z</updated>
   <id>http://https://xiaoyu921.github.io/</id>
   
   <author>
@@ -14,6 +14,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>空间句法学习小结</title>
+    <link href="http://https://xiaoyu921.github.io/2016/07/29/%E7%A9%BA%E9%97%B4%E5%8F%A5%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/"/>
+    <id>http://https://xiaoyu921.github.io/2016/07/29/空间句法学习小结/</id>
+    <published>2016-07-28T23:21:29.000Z</published>
+    <updated>2016-08-02T01:14:37.533Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="空间句法"><a href="#空间句法" class="headerlink" title="空间句法"></a>空间句法</h2><h3 id="1-空间句法与街道网"><a href="#1-空间句法与街道网" class="headerlink" title="1.空间句法与街道网"></a>1.空间句法与街道网</h3><ol>
+<li>空间句法所做的就是把街道网放到研究的中心，分析它的不同形式。</li>
+<li>几何学+拓扑学 ————&gt; 某些街道将比其他街道变得更具有可达性，于是具有成为目的地的更大潜力，而另一些————&gt; 网络中起点和目的地之间的通过路线。</li>
+<li>网络-运动的联系会带来一系列的结果，人流的多少决定了土地的利用模式：如零售会移到街道网中人流多的地方，居住会移到街道网中人流较少的地方。</li>
+</ol>
+<h3 id="2-空间句法理论原理-可忽略"><a href="#2-空间句法理论原理-可忽略" class="headerlink" title="2.空间句法理论原理(可忽略)"></a>2.空间句法理论原理(可忽略)</h3><p>句法空间方法是英国伦敦大学建筑学院的Hillier提出的。理论原理可以归结为以下（摘自空间是机器-建筑组构理论【Hillier】）：</p>
+<ol>
+<li><p>城市是社会经济多重因素长期影响下的复杂空间自组织系统，在长期的要素系统耦合作用过程中，物质空间与其社会功能之间产生复杂的内在联系和相互作用，成为协同发展的互动子系统。因此，可以借助蕴含社会性的物质空间分析，解释物质空间内在的功能结构（如中心功能）。</p>
+</li>
+<li><p>可视范围内的街道空间对主体社会运动具有意向引导作用。因此，<em>主体感知范围内的最长街道可构成空间句法分析的基本单元—轴线</em>。在城市内部，相互连接的轴线之间存在着内在的结构关系（不同城市的轴线网络形态可能多种多样，但各个城市内部的轴线结构关系具有相对一致性，具有严密的拓扑学逻辑特征），正是这一共性的结构关系形成城市拓扑空间内在的发展规律。因此，通过对城市拓扑空间的内在结构分析，可以捕捉不同城市内在的共性规律。</p>
+</li>
+<li><p>不同轴线引导的人流运动量存在差异，在句法结构中，拥有高集成度的轴线能够引入更多的人流与社会功能。更多的人流进一步促进街道物质空间增强其功能空间重塑，从而在物质空间与社会运动流之间形成“乘数效应”。久而久之，某些街道的中心性日益增强，产生了“运动过程中心化”现象，形成集成核。</p>
+</li>
+</ol>
+<p><img src="http://s10.sinaimg.cn/mw690/005K6ELBzy6TZypLlgZ09&amp;690" alt="kongjian"></p>
+<h3 id="3-空间句法的理论基础"><a href="#3-空间句法的理论基础" class="headerlink" title="3.空间句法的理论基础"></a>3.空间句法的理论基础</h3><ol>
+<li><p>布局:是指一种空间模式或者空间构形，暗示同时存在的既有关系。<br><img src="http://i1.piimg.com/567571/935a989bf9d98e6b.png" alt=""></p>
+</li>
+<li><p>关系图解:一般通过图示来思考空间构形，简称J图（justified graph）是其中的一种方式。不同的空间具有不同的整合度值，根据它们的值简单地给空间上色，从红色的最大值到蓝色的最小值，从而清楚地在视觉上显示整合度关系。<br><img src="http://i2.piimg.com/567571/d8d0195399b75189.png" alt=""></p>
+<p> 街道形式的网络也同样可以进行整合度的分析，将每条街画到其他街道的J图，计算从各条街道到所有其他街道要经过的街的数量，然后以得到的整合度值给街道网着色。道路越接近红色，它到其他路线的可达性就越强。<br><img src="http://i2.piimg.com/567571/683c53746a6cdff7.png" alt=""><br> 整合度越低，需要从它到达任意另一空间就必须穿越更多其他的空间。</p>
+</li>
+</ol>
+<h3 id="4-空间分割"><a href="#4-空间分割" class="headerlink" title="4.空间分割"></a>4.空间分割</h3><h4 id="4-1-轴线法"><a href="#4-1-轴线法" class="headerlink" title="4.1 轴线法"></a>4.1 轴线法</h4><p>适用：建筑或者比较密集的建筑群体</p>
+<p>空间句法规定，<strong>用最少且最长的轴线覆盖整个空间系统，并且穿越每个凸状空间，然后把每条轴线当作一个节点，根据它们之间的交接关系，便可转化为前述关系图解，并计算和分析各种空间句法变量，最后用深浅不同的颜色表示每条轴线句法变量的高低。</strong><br><img src="http://s8.sinaimg.cn/middle/5ec68988t77bbf283d697&amp;690" alt="轴线分割的绘制和计算"></p>
+<h4 id="4-2-凸多边形法"><a href="#4-2-凸多边形法" class="headerlink" title="4.2 凸多边形法"></a>4.2 凸多边形法</h4><p>适用：建筑内部房间或者走廊（该方法对城市系统研究不适用）</p>
+<p>凸空间：任意两点之间互相可以看的到，凸状空间中的每个点都能看到整个凸状空间。</p>
+<p>空间句法规定，<strong>用最少且最大的凸状覆盖整个空间系统，然后把每个凸状当作一个节点根据它们之间的连接关系，便可转化为前述关系图解并计算和分析各种空间句法变量，然后用深浅不同的颜色表示每个凸状空间句法变量的高低。</strong><br><img src="http://s1.sinaimg.cn/middle/5ec68988tad577895ae70&amp;690" alt=""></p>
+<h4 id="4-3-视区分割法"><a href="#4-3-视区分割法" class="headerlink" title="4.3 视区分割法"></a>4.3 视区分割法</h4><p>适用：目前限于理论探索阶段。</p>
+<p>对其中的每一点，相应的视区是由所有从该点可视的点的集合构成，即视区分割法，用视区方法进行空间分割，就是首先在空间系统中选择一定数量的特征点，一般选取道路交叉口和转折点的中心作为特征点，因为这些地方在空间转换上具有战略性地位；接着求出每个点的视区，然后根据这些视区之间的交接关系，转化为关系图解，并计算每个视区的句法变量。最后的图示可用深浅不同的颜色来表示每个点句法变量的大小，并用等值线描绘出这些点之间的过渡区域。<br><img src="http://i4.piimg.com/567571/d4ac662c4ac5a2c2.png" alt="视区分割的绘制和计算"></p>
+<h4 id="4-4-轴线图画法"><a href="#4-4-轴线图画法" class="headerlink" title="4.4 轴线图画法"></a>4.4 轴线图画法</h4><p>空间句法一般采用轴线方法表示，它的基本原则是：首先画一条最长的轴线来代表一条街道，然后画第二长的轴线与第一线相交，直至整个自由空间或者街道网由一系列轴线连接，所画的轴线图称作轴线地图。</p>
+<p>也就是说，轴线地图是由最少数目的最长直线组成，这可以保证轴线图可以代表城市形态的基本结构特征。<br><img src="http://i4.piimg.com/567571/0de704d9a63c1a62.png" alt="">     </p>
+<h3 id="5-某些问题"><a href="#5-某些问题" class="headerlink" title="5.某些问题"></a>5.某些问题</h3><h4 id="5-1-空间句法应用"><a href="#5-1-空间句法应用" class="headerlink" title="5.1 空间句法应用"></a>5.1 空间句法应用</h4><p>空间句法在城市空间典型的应用包括城市行人和车流量的分析、罪犯的空间分布、复杂建筑环境下的空间认知等，所有这些研究都建立在一个基本假设的基础上，即人的空间活动或行为在很大程度上受空间形态或结构的影响。许多实验研究已经证实空间句法对于模拟和理解城市形态和结构具有重要的意义。</p>
+<h4 id="5-2-存在问题"><a href="#5-2-存在问题" class="headerlink" title="5.2 存在问题"></a>5.2 存在问题</h4><p>首先就是空间句法本身轴线图的定义比较模糊，比如当街巷呈弯曲状或是街巷有高差变化时，轴线就不好确定，而且轴线图的生成现在主要还是依靠人工去定，这是不严密的。这是其技术环节问题。<br>就其理论本身而言，也还有许多不够严密的地方。<br><img src="http://i2.piimg.com/567571/4076789bc7921282.jpg" alt=""></p>
+<h3 id="6-相关软件"><a href="#6-相关软件" class="headerlink" title="6.相关软件"></a>6.相关软件</h3><h4 id="Axwoman（Macintosh）"><a href="#Axwoman（Macintosh）" class="headerlink" title="Axwoman（Macintosh）"></a>Axwoman（Macintosh）</h4><p>用来处理地图，产生轴线模型并分析各轴线位置和相互联系的软件</p>
+<h4 id="Pesh（Macintosh）"><a href="#Pesh（Macintosh）" class="headerlink" title="Pesh（Macintosh）"></a>Pesh（Macintosh）</h4><p>把复杂建筑物的室内空间，看作是一个小的城市空间系统来处理的软件，作用和Axwoman相似。</p>
+<h4 id="SpaceBox（Macintosh）"><a href="#SpaceBox（Macintosh）" class="headerlink" title="SpaceBox（Macintosh）"></a>SpaceBox（Macintosh）</h4><p>处理轴线地图或凸状空间地图的软件，得到空间体系的形态变量及其视觉化图像。</p>
+<h4 id="NewWave（Macintosh）"><a href="#NewWave（Macintosh）" class="headerlink" title="NewWave（Macintosh）"></a>NewWave（Macintosh）</h4><p>另一个分析凸状空间系统的工具，用户借助该文件可以得到一个表示空间特征变量的文本文件。</p>
+<h4 id="OrangeBox（Macintosh）"><a href="#OrangeBox（Macintosh）" class="headerlink" title="OrangeBox（Macintosh）"></a>OrangeBox（Macintosh）</h4><p>可以抽象空间系统并制作该空间的节点模型图。</p>
+<h4 id="Deptmap（PC）"><a href="#Deptmap（PC）" class="headerlink" title="Deptmap（PC）"></a>Deptmap（PC）</h4><p>利用该软件可以生成空间环境形态变量的可视化图像。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;空间句法&quot;&gt;&lt;a href=&quot;#空间句法&quot; class=&quot;headerlink&quot; title=&quot;空间句法&quot;&gt;&lt;/a&gt;空间句法&lt;/h2&gt;&lt;h3 id=&quot;1-空间句法与街道网&quot;&gt;&lt;a href=&quot;#1-空间句法与街道网&quot; class=&quot;headerlink&quot; titl
+    
+    </summary>
+    
+      <category term="空间句法" scheme="http://https://xiaoyu921.github.io/categories/%E7%A9%BA%E9%97%B4%E5%8F%A5%E6%B3%95/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>空间句法学习笔记</title>
