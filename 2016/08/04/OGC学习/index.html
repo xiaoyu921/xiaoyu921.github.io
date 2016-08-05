@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>空间句法学习笔记三论文研读 | xiaoyu&#39;blog</title>
+  <title>OGC学习 | xiaoyu&#39;blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -242,61 +242,40 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2016-08-03T07:50:45.000Z" itemprop="datePublished">
-          2016-08-03
+      <time datetime="2016-08-04T11:11:00.000Z" itemprop="datePublished">
+          2016-08-04
       </time>
     
 </span>
-                <h1>空间句法学习笔记三论文研读</h1>
+                <h1>OGC学习</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>基于之前的两次学习，对空间句法已经有了大致的了解。笔记一通过各种途径对目前现有的对空间句法学习有帮助的论文资料进行了整理，笔记二通过观看相关理论资料，对空间句法有了整体的把握。此次笔记三，我将花近三天时间对已有的论文进行研读，为之后的学习先打个基础。基本上能够保证每天下班前可以更新一次，另外，自己仍属于初学阶段，对很多知识可能都不能很好的把握，所以文章可能有很多二B的行为，还请谅解。</p>
-<h2 id="工作安排"><a href="#工作安排" class="headerlink" title="工作安排"></a>工作安排</h2><p>做了一上午的数据，下午终于可以好好的来看看我的空间句法啦。首先我从之前加的空间句法交流群里的文章入手，可能这个入手方式不太好，但是目前来说，我先凑合着用，如有困难及时改正吧。<br>两个群里有很多文章都是重复的，应该也能体现出这些文章的重要性吧。<br><img src="http://i4.piimg.com/567571/e23d5a5516e06dbf.png" alt=""><br><img src="http://i4.piimg.com/567571/793ee9b8a2559af0.png" alt=""></p>
-<h3 id="2016-08-03"><a href="#2016-08-03" class="headerlink" title="2016/08/03"></a>2016/08/03</h3><h4 id="1-基于GIS和空间可达性的城市地价分布研究-宋珂"><a href="#1-基于GIS和空间可达性的城市地价分布研究-宋珂" class="headerlink" title="1. 基于GIS和空间可达性的城市地价分布研究_宋珂"></a>1. 基于GIS和空间可达性的城市地价分布研究_宋珂</h4><p><strong>简述</strong> ：文章数据选取浙江省台州市的主体城区之一路桥区，获取了路桥区的地理底图与建成区的地价抽样数据，以路桥区的建成区为研究区。所有图形数据均以 ArcGIS 的.shapefile 格式储存在 Geodatabase中；地价样点的属性数据以 Access（我没用过） 的.mdb 格式储存在 Geodatabase中，并与地价样点的图形数据一一关联。<br><img src="http://i2.piimg.com/567571/b72a454cecd33d08.png" alt=""></p>
-<h4 id="1-1-亮点"><a href="#1-1-亮点" class="headerlink" title="1.1 亮点"></a>1.1 亮点</h4><h5 id="1-1-1-基于特征点的空间句法"><a href="#1-1-1-基于特征点的空间句法" class="headerlink" title="1.1.1 基于特征点的空间句法"></a>1.1.1 基于特征点的空间句法</h5><pre><code>传统的空间句法通过轴线来分割城市系统，分析对象为轴线，沿轴线所有点的空间句法分析变量值是相同的。 这种分析方法不太合逻辑。因为一条街道上各个位置的空间可达性不可能完全相同，所以一条轴线上各点的空间句法变量值也应有所变化。为此，本文提出了一种新的思路——基于特征点的空间句法， 即以一组特征点表示城市结构，以代替轴线。一般而言，地价信息通过样点调查获得，以点状形式存储。这样，将空间句法特征点与地价样点在空间上关联起来，便可分析空间可达性与地价分布之间的关系.
-</code></pre><h5 id="1-1-2-特征点的生成方法"><a href="#1-1-2-特征点的生成方法" class="headerlink" title="1.1.2 特征点的生成方法"></a>1.1.2 特征点的生成方法</h5><p>a. 特征点可以借助城市交通网络自动产生</p>
-<p>b. 环形道路处理简便</p>
-<pre><code>一方面，这些特征点大都可以借助城市交通网络自动产生； 另一方面，基于特征点的空间句法对于环形道路的表示也相对简单一些， 方法是将环形道路分割成为几段弧形，分别取各段弧的顶点即可。特征点生成的步骤可分为三步：第一步，提取城市交通网络的交点和道路的拐点。提取路口、道路拐点的算法较为简单，可在 ArcGIS 中运用“Visual Basic for Application”（ VBA）编写程序自动完成；第二步，生成这些点的连接关系图（图 6），可以假设城市系统是一个简单的二维平面，继而判断任意两点之间是否可视， 即判断任意两点之间的连线是否与地块或建筑物重叠，这一步也可以运用 VBA 编程实现；第三步，对道路拐点进行筛选。之所以要进行第三个步骤，是因为在实际操作中，可能会遇到某条道路存在轻微的、完全可以忽略的曲折，程序仍然会将这些微小弯曲的拐点提取出来，这样会减弱特征点的典型性、增加后续句法变量计算的复杂度。因此，本文通过一个判别函数[3]来判断某个已被提取的拐点是否符合要求（图 7）。
+      		<p><img src="http://www.opengeospatial.org/themes/ogc/logo.png" alt=""> <a href="http://www.opengeospatial.org/" target="_blank" rel="external">官网地址 ：http://www.opengeospatial.org/</a></p>
+<h2 id="OGC简介"><a href="#OGC简介" class="headerlink" title="OGC简介"></a>OGC简介</h2><p>OGC全称Open Geospatial Consortium，自称是一个非盈利的、国际化的、自愿协商的标准化组织，它的主要目的就是制定与空间信息、基于位置服务相关的标准。这些标准就是OGC的“产品”，而这些标准的用处就在于使不同厂商、不同产品之间可以通过统一的接口进行互操作。</p>
+<p>在GIS领域，OGC已经是一个比较“官方”的标准化机构了，它不但包括了ESRI、Google、Oracle等业界强势企业作为其成员，同时还和W3C、ISO、IEEE等协会或组织结成合作伙伴关系。因此，OGC的标准虽然并不带有强制性，但是因为其背景和历史的原因，它所制定的标准天然地具有一定的权威性。</p>
+<p>所以，我们也可以看到，很多国内的部门或行业要进行地理空间信息的共享或发布时，言必称OGC标准，就和这个原因有关。但是，事实上我们对OGC和OGC标准并不需要盲目崇拜和迷信，从RESTful服务规范的缺失、KML的空降等可以看出来，OGC还是有一些缺失和不足的地方。<br>这里提供一个<br><a href="http://www.open-open.com/doc/view/fc553e93b75848fd83e49afe2c354347" target="_blank" rel="external">OGC 标准介绍简介文档</a></p>
+<p>OGC的标准基本上就是OGC所有的成果，而所谓的标准就是一些接口或编码的技术文档。不同的厂商、各种GIS产品都可以对照这些文档来定义开放服务的接口、空间数据存储的编码、空间操作的方法等。<br>除了正式发布的标准（OpenGIS® Standards ），OGC的工作成果还包括一些其它类型的文档，比如讨论稿（Discussion Papers ）、抽象规范（Abstract Specification ）、最佳实践文档（Best Practices Documents ）、OGC参考模型（OGC Reference Model (ORM) ）、白皮书（White Papers ）等。在OGC的工作中，标准的制定可能由待讨论的“讨论稿”开始，在形成一定的统一意见后形成“抽象规范”，进一步具体化到“标准”，在这个过程中同时也可能形成“最佳实践文档”供印证，而“OGC参考模型”则是描述“抽象规范”、“标准”、“最佳实践文档”之间的关系。当然，其中我们最关心的还是OGC标准文档。</p>
+<p>)</p>
+<p><img src="http://i4.piimg.com/567571/4019c6359d5a0be3.png" alt=""><br><img src="http://i4.piimg.com/567571/cbf1d91355cd2de4.png" alt=""></p>
+<h2 id="OGC白皮书"><a href="#OGC白皮书" class="headerlink" title="OGC白皮书"></a>OGC白皮书</h2><p>官网有一个<a href="http://www.opengeospatial.org/docs/whitepapers" target="_blank" rel="external">白皮书</a></p>
+<p>白皮书是在一个或多个技术因素或其他科目有密切关系的OGC的工作的成员批准出版，OGC向公众发布的,通常包括一个高级的解释基于标准体系结构或框架的解决方案。 白皮书经常解释研究的结果或结论。</p>
+<h2 id="WFS-要素Web服务"><a href="#WFS-要素Web服务" class="headerlink" title="WFS-要素Web服务"></a>WFS-要素Web服务</h2><p>WFS（OpenGIS® Web Feature Service）当前版本是1.1.0。WFS标准定义了一些操作，这些操作允许用户在分布式的环境下通过HTTP对空间数据进行查询、编辑等操作。</p>
 
-Th &lt; d/l
-
-式中， Th 是自定义的阈值， d 为点 n 到点 n-1 与 n+1 之间连接线的最短距离， l 为点 n-1 与 n+1 之间的距离。若 d/l &gt; Th，则保留点 n；反之，删除点 n，将 n-1 与 n+1 相连，同时更新连接关系图。对所有拐点依次进行判别，直到全部符合要求。
-</code></pre><p>(如果总结他的做法，基本上还是看原文比较好，我摘抄的话没有太大的意义，所以，就不再一一粘贴过来了)</p>
-<h4 id="1-2自我总结"><a href="#1-2自我总结" class="headerlink" title="1.2自我总结"></a>1.2自我总结</h4><h5 id="1-2-1-文章提出来分析空间可达性与地价分布关系的方法，对我后期地址域的研究还是很有帮助的"><a href="#1-2-1-文章提出来分析空间可达性与地价分布关系的方法，对我后期地址域的研究还是很有帮助的" class="headerlink" title="1.2.1 文章提出来分析空间可达性与地价分布关系的方法，对我后期地址域的研究还是很有帮助的"></a>1.2.1 文章提出来分析空间可达性与地价分布关系的方法，对我后期地址域的研究还是很有帮助的</h5><ul>
-<li><p>特征点————&gt;轴线  表示城市空间结构</p>
-<ul>
-<li><p>交通网络——参数判别法——&gt;自动提取并生成特征点</p>
-</li>
-<li><p>特征点———Dijlstra 算法(最短路程)——&gt;集成度(每个特征点与其它特征点之间的最短路程)</p>
-</li>
-<li><p>就近选取特征点——反距离加权插值——&gt;地价样点集成度</p>
-</li>
-<li><p>150 个样本—— SPSS 软件——&gt;分析空间可达性与地价之间的相关性程度(对所有地价样点的地价变量与整体和局部集成度分别进行皮尔逊相关性分析与多元回归分析，计算它们之间的数理统计关系，求出表示两者关系的回归方程及其相关性指数。)</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="1-2-2-该方法大部分在-ArcGIS-中运用-VBA编写程序自动实现，可是VBA我没做过。。。尴尬-ԾㅂԾ-后面的SPSS分析，我也没有尝试过。任重道远。。。。"><a href="#1-2-2-该方法大部分在-ArcGIS-中运用-VBA编写程序自动实现，可是VBA我没做过。。。尴尬-ԾㅂԾ-后面的SPSS分析，我也没有尝试过。任重道远。。。。" class="headerlink" title="1.2.2 该方法大部分在 ArcGIS 中运用 VBA编写程序自动实现，可是VBA我没做过。。。尴尬,,ԾㅂԾ,,后面的SPSS分析，我也没有尝试过。任重道远。。。。"></a>1.2.2 该方法大部分在 ArcGIS 中运用 VBA编写程序自动实现，可是VBA我没做过。。。尴尬,,ԾㅂԾ,,后面的SPSS分析，我也没有尝试过。任重道远。。。。</h5><h4 id="2-基于空间句法分析的商业体空间人流分布模拟"><a href="#2-基于空间句法分析的商业体空间人流分布模拟" class="headerlink" title="2 基于空间句法分析的商业体空间人流分布模拟"></a>2 基于空间句法分析的商业体空间人流分布模拟</h4><p>研究样本是同一个商圈的购物中心，研究的内容和我目前没有太大的关系，也没有太大的启发（可能是规划口子写文章太过漂亮了）唯一值得肯定的是实证用的都是SPSS，怪我之前阅历浅不晓得。<br><img src="http://i2.piimg.com/567571/0cdfad99df126f56.png" alt=""></p>
-<h3 id="2016-08-03-1"><a href="#2016-08-03-1" class="headerlink" title="2016/08/03"></a>2016/08/03</h3>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2016/08/04/OGC学习/" style="float: left;">
-        ← OGC学习
-    </a>
     
-    
-    <a class="pull-right" href="/2016/07/29/空间句法学习笔记二入门知识/">
-        空间句法学习笔记二入门知识 →
+    <a class="pull-right" href="/2016/08/03/空间句法学习笔记三论文研读/">
+        空间句法学习笔记三论文研读 →
     </a>
     
 </nav>
 
         <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2016/08/03/空间句法学习笔记三论文研读/" data-title="空间句法学习笔记三论文研读" data-url="http://https://xiaoyu921.github.io/2016/08/03/空间句法学习笔记三论文研读/"></div>
+<div class="ds-thread" data-thread-key="2016/08/04/OGC学习/" data-title="OGC学习" data-url="http://https://xiaoyu921.github.io/2016/08/04/OGC学习/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"xiaoyu921"};
 	(function() {

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://https://xiaoyu921.github.io/"/>
-  <updated>2016-08-04T07:57:02.094Z</updated>
+  <updated>2016-08-05T06:51:36.760Z</updated>
   <id>http://https://xiaoyu921.github.io/</id>
   
   <author>
@@ -16,11 +16,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>OGC学习</title>
+    <link href="http://https://xiaoyu921.github.io/2016/08/04/OGC%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://https://xiaoyu921.github.io/2016/08/04/OGC学习/</id>
+    <published>2016-08-04T11:11:00.000Z</published>
+    <updated>2016-08-05T06:51:36.760Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.opengeospatial.org/themes/ogc/logo.png" alt=""> <a href="http://www.opengeospatial.org/" target="_blank" rel="external">官网地址 ：http://www.opengeospatial.org/</a></p>
+<h2 id="OGC简介"><a href="#OGC简介" class="headerlink" title="OGC简介"></a>OGC简介</h2><p>OGC全称Open Geospatial Consortium，自称是一个非盈利的、国际化的、自愿协商的标准化组织，它的主要目的就是制定与空间信息、基于位置服务相关的标准。这些标准就是OGC的“产品”，而这些标准的用处就在于使不同厂商、不同产品之间可以通过统一的接口进行互操作。</p>
+<p>在GIS领域，OGC已经是一个比较“官方”的标准化机构了，它不但包括了ESRI、Google、Oracle等业界强势企业作为其成员，同时还和W3C、ISO、IEEE等协会或组织结成合作伙伴关系。因此，OGC的标准虽然并不带有强制性，但是因为其背景和历史的原因，它所制定的标准天然地具有一定的权威性。</p>
+<p>所以，我们也可以看到，很多国内的部门或行业要进行地理空间信息的共享或发布时，言必称OGC标准，就和这个原因有关。但是，事实上我们对OGC和OGC标准并不需要盲目崇拜和迷信，从RESTful服务规范的缺失、KML的空降等可以看出来，OGC还是有一些缺失和不足的地方。<br>这里提供一个<br><a href="http://www.open-open.com/doc/view/fc553e93b75848fd83e49afe2c354347" target="_blank" rel="external">OGC 标准介绍简介文档</a></p>
+<p>OGC的标准基本上就是OGC所有的成果，而所谓的标准就是一些接口或编码的技术文档。不同的厂商、各种GIS产品都可以对照这些文档来定义开放服务的接口、空间数据存储的编码、空间操作的方法等。<br>除了正式发布的标准（OpenGIS® Standards ），OGC的工作成果还包括一些其它类型的文档，比如讨论稿（Discussion Papers ）、抽象规范（Abstract Specification ）、最佳实践文档（Best Practices Documents ）、OGC参考模型（OGC Reference Model (ORM) ）、白皮书（White Papers ）等。在OGC的工作中，标准的制定可能由待讨论的“讨论稿”开始，在形成一定的统一意见后形成“抽象规范”，进一步具体化到“标准”，在这个过程中同时也可能形成“最佳实践文档”供印证，而“OGC参考模型”则是描述“抽象规范”、“标准”、“最佳实践文档”之间的关系。当然，其中我们最关心的还是OGC标准文档。</p>
+<p>)</p>
+<p><img src="http://i4.piimg.com/567571/4019c6359d5a0be3.png" alt=""><br><img src="http://i4.piimg.com/567571/cbf1d91355cd2de4.png" alt=""></p>
+<h2 id="OGC白皮书"><a href="#OGC白皮书" class="headerlink" title="OGC白皮书"></a>OGC白皮书</h2><p>官网有一个<a href="http://www.opengeospatial.org/docs/whitepapers" target="_blank" rel="external">白皮书</a></p>
+<p>白皮书是在一个或多个技术因素或其他科目有密切关系的OGC的工作的成员批准出版，OGC向公众发布的,通常包括一个高级的解释基于标准体系结构或框架的解决方案。 白皮书经常解释研究的结果或结论。</p>
+<h2 id="WFS-要素Web服务"><a href="#WFS-要素Web服务" class="headerlink" title="WFS-要素Web服务"></a>WFS-要素Web服务</h2><p>WFS（OpenGIS® Web Feature Service）当前版本是1.1.0。WFS标准定义了一些操作，这些操作允许用户在分布式的环境下通过HTTP对空间数据进行查询、编辑等操作。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://www.opengeospatial.org/themes/ogc/logo.png&quot; alt=&quot;&quot;&gt; &lt;a href=&quot;http://www.opengeospatial.org/&quot; target=&quot;_blank&quot; rel=&quot;extern
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>空间句法学习笔记三论文研读</title>
     <link href="http://https://xiaoyu921.github.io/2016/08/03/%E7%A9%BA%E9%97%B4%E5%8F%A5%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%89%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB/"/>
     <id>http://https://xiaoyu921.github.io/2016/08/03/空间句法学习笔记三论文研读/</id>
     <published>2016-08-03T07:50:45.000Z</published>
-    <updated>2016-08-04T07:57:02.094Z</updated>
+    <updated>2016-08-04T11:08:21.497Z</updated>
     
     <content type="html"><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>基于之前的两次学习，对空间句法已经有了大致的了解。笔记一通过各种途径对目前现有的对空间句法学习有帮助的论文资料进行了整理，笔记二通过观看相关理论资料，对空间句法有了整体的把握。此次笔记三，我将花近三天时间对已有的论文进行研读，为之后的学习先打个基础。基本上能够保证每天下班前可以更新一次，另外，自己仍属于初学阶段，对很多知识可能都不能很好的把握，所以文章可能有很多二B的行为，还请谅解。</p>
 <h2 id="工作安排"><a href="#工作安排" class="headerlink" title="工作安排"></a>工作安排</h2><p>做了一上午的数据，下午终于可以好好的来看看我的空间句法啦。首先我从之前加的空间句法交流群里的文章入手，可能这个入手方式不太好，但是目前来说，我先凑合着用，如有困难及时改正吧。<br>两个群里有很多文章都是重复的，应该也能体现出这些文章的重要性吧。<br><img src="http://i4.piimg.com/567571/e23d5a5516e06dbf.png" alt=""><br><img src="http://i4.piimg.com/567571/793ee9b8a2559af0.png" alt=""></p>
@@ -49,7 +77,7 @@ Th &lt; d/l
 </li>
 </ul>
 <h5 id="1-2-2-该方法大部分在-ArcGIS-中运用-VBA编写程序自动实现，可是VBA我没做过。。。尴尬-ԾㅂԾ-后面的SPSS分析，我也没有尝试过。任重道远。。。。"><a href="#1-2-2-该方法大部分在-ArcGIS-中运用-VBA编写程序自动实现，可是VBA我没做过。。。尴尬-ԾㅂԾ-后面的SPSS分析，我也没有尝试过。任重道远。。。。" class="headerlink" title="1.2.2 该方法大部分在 ArcGIS 中运用 VBA编写程序自动实现，可是VBA我没做过。。。尴尬,,ԾㅂԾ,,后面的SPSS分析，我也没有尝试过。任重道远。。。。"></a>1.2.2 该方法大部分在 ArcGIS 中运用 VBA编写程序自动实现，可是VBA我没做过。。。尴尬,,ԾㅂԾ,,后面的SPSS分析，我也没有尝试过。任重道远。。。。</h5><h4 id="2-基于空间句法分析的商业体空间人流分布模拟"><a href="#2-基于空间句法分析的商业体空间人流分布模拟" class="headerlink" title="2 基于空间句法分析的商业体空间人流分布模拟"></a>2 基于空间句法分析的商业体空间人流分布模拟</h4><p>研究样本是同一个商圈的购物中心，研究的内容和我目前没有太大的关系，也没有太大的启发（可能是规划口子写文章太过漂亮了）唯一值得肯定的是实证用的都是SPSS，怪我之前阅历浅不晓得。<br><img src="http://i2.piimg.com/567571/0cdfad99df126f56.png" alt=""></p>
-]]></content>
+<h3 id="2016-08-03-1"><a href="#2016-08-03-1" class="headerlink" title="2016/08/03"></a>2016/08/03</h3>]]></content>
     
     <summary type="html">
     
@@ -67,7 +95,7 @@ Th &lt; d/l
     <link href="http://https://xiaoyu921.github.io/2016/07/29/%E7%A9%BA%E9%97%B4%E5%8F%A5%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86/"/>
     <id>http://https://xiaoyu921.github.io/2016/07/29/空间句法学习笔记二入门知识/</id>
     <published>2016-07-28T23:21:29.000Z</published>
-    <updated>2016-08-03T07:53:13.876Z</updated>
+    <updated>2016-08-05T08:52:47.532Z</updated>
     
     <content type="html"><![CDATA[<h2 id="空间句法"><a href="#空间句法" class="headerlink" title="空间句法"></a>空间句法</h2><h3 id="1-空间句法与街道网"><a href="#1-空间句法与街道网" class="headerlink" title="1.空间句法与街道网"></a>1.空间句法与街道网</h3><ol>
 <li>空间句法所做的就是把街道网放到研究的中心，分析它的不同形式。</li>
@@ -108,6 +136,30 @@ Th &lt; d/l
 <h4 id="NewWave（Macintosh）"><a href="#NewWave（Macintosh）" class="headerlink" title="NewWave（Macintosh）"></a>NewWave（Macintosh）</h4><p>另一个分析凸状空间系统的工具，用户借助该文件可以得到一个表示空间特征变量的文本文件。</p>
 <h4 id="OrangeBox（Macintosh）"><a href="#OrangeBox（Macintosh）" class="headerlink" title="OrangeBox（Macintosh）"></a>OrangeBox（Macintosh）</h4><p>可以抽象空间系统并制作该空间的节点模型图。</p>
 <h4 id="Deptmap（PC）"><a href="#Deptmap（PC）" class="headerlink" title="Deptmap（PC）"></a>Deptmap（PC）</h4><p>利用该软件可以生成空间环境形态变量的可视化图像。</p>
+<h2 id="2016-08-05-更新"><a href="#2016-08-05-更新" class="headerlink" title="2016/08/05 更新"></a>2016/08/05 更新</h2><p><img src="http://i4.piimg.com/567571/7c5dc73f818655ec.png" alt=""></p>
+<ul>
+<li>连接值</li>
+</ul>
+<p>连接值，与某节点邻近的节点个数即为该节点的连接值。</p>
+<p>某空间节点的连接值越高，则表示其空间渗透性越好。<br><img src="http://img.my.csdn.net/uploads/201304/17/1366163853_9045.png" alt=""></p>
+<ul>
+<li>控制值</li>
+</ul>
+<p>控制值，假设系统中每个节点的权重都是1，则某节点A从相邻节点B分配到的权重为1/（B的连接值），与A直接相连的所有节点的连接值的倒数之和，就是A的控制值。控制值表示节点之间相互控制的程度。<br><img src="http://img.my.csdn.net/uploads/201304/17/1366163881_7624.png" alt=""> </p>
+<ul>
+<li>深度值</li>
+</ul>
+<p>深度值，假设两个邻近节点的距离为一步，则从一个节点到另一个节点的最小步数就是这两个节点间的深度。</p>
+<p>平均深度值（MD）：系统中某个节点到其他所有节点的最少步数的平均值</p>
+<p>系统的总深度：各个节点的平均深度值之和。</p>
+<p>深度值表达的是节点在拓扑意义上的可达性，即节点在空间系统中的空间转换次数。深度蕴含着重要的社会和文化意义，深度值高的节点，可达性差，人的活动强度低，这往往与犯罪、盲区联系到一起。</p>
+<ul>
+<li>集成度</li>
+</ul>
+<p>集成度&gt;1 集聚性较强</p>
+<p>0.6&gt;集成度&gt;0.4 布局较为分散</p>
+<p>整体集成度： 一个空间与其他空间的关系</p>
+<p>局部集成度： 某空间距离其几步</p>
 ]]></content>
     
     <summary type="html">

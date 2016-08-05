@@ -290,6 +290,30 @@
 <h4 id="NewWave（Macintosh）"><a href="#NewWave（Macintosh）" class="headerlink" title="NewWave（Macintosh）"></a>NewWave（Macintosh）</h4><p>另一个分析凸状空间系统的工具，用户借助该文件可以得到一个表示空间特征变量的文本文件。</p>
 <h4 id="OrangeBox（Macintosh）"><a href="#OrangeBox（Macintosh）" class="headerlink" title="OrangeBox（Macintosh）"></a>OrangeBox（Macintosh）</h4><p>可以抽象空间系统并制作该空间的节点模型图。</p>
 <h4 id="Deptmap（PC）"><a href="#Deptmap（PC）" class="headerlink" title="Deptmap（PC）"></a>Deptmap（PC）</h4><p>利用该软件可以生成空间环境形态变量的可视化图像。</p>
+<h2 id="2016-08-05-更新"><a href="#2016-08-05-更新" class="headerlink" title="2016/08/05 更新"></a>2016/08/05 更新</h2><p><img src="http://i4.piimg.com/567571/7c5dc73f818655ec.png" alt=""></p>
+<ul>
+<li>连接值</li>
+</ul>
+<p>连接值，与某节点邻近的节点个数即为该节点的连接值。</p>
+<p>某空间节点的连接值越高，则表示其空间渗透性越好。<br><img src="http://img.my.csdn.net/uploads/201304/17/1366163853_9045.png" alt=""></p>
+<ul>
+<li>控制值</li>
+</ul>
+<p>控制值，假设系统中每个节点的权重都是1，则某节点A从相邻节点B分配到的权重为1/（B的连接值），与A直接相连的所有节点的连接值的倒数之和，就是A的控制值。控制值表示节点之间相互控制的程度。<br><img src="http://img.my.csdn.net/uploads/201304/17/1366163881_7624.png" alt=""> </p>
+<ul>
+<li>深度值</li>
+</ul>
+<p>深度值，假设两个邻近节点的距离为一步，则从一个节点到另一个节点的最小步数就是这两个节点间的深度。</p>
+<p>平均深度值（MD）：系统中某个节点到其他所有节点的最少步数的平均值</p>
+<p>系统的总深度：各个节点的平均深度值之和。</p>
+<p>深度值表达的是节点在拓扑意义上的可达性，即节点在空间系统中的空间转换次数。深度蕴含着重要的社会和文化意义，深度值高的节点，可达性差，人的活动强度低，这往往与犯罪、盲区联系到一起。</p>
+<ul>
+<li>集成度</li>
+</ul>
+<p>集成度&gt;1 集聚性较强</p>
+<p>0.6&gt;集成度&gt;0.4 布局较为分散</p>
+<p>整体集成度： 一个空间与其他空间的关系</p>
+<p>局部集成度： 某空间距离其几步</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
